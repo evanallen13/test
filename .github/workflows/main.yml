@@ -39,6 +39,8 @@ jobs:
         uses: actions/checkout@v2 # checkout the repository content
      
       - name: Create Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh issue create --label bug --label "help wanted"
 #       - name: print
