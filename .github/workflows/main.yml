@@ -56,3 +56,6 @@ jobs:
 
       - name: execute py script # run main.py
         run: python example.py "Saying Hello from workflow"
+
+      - name: echo hello
+        run: echo "Hello World"
