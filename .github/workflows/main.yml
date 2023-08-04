@@ -59,6 +59,7 @@ jobs:
       - name: execute py script 
         run: python example.py "Saying Hello from workflow"
 
+<<<<<<< HEAD
       - name: echo hello
         run: echo "Hello World"
 
@@ -68,3 +69,12 @@ jobs:
     steps:
       - name: Hello MacOs
         run: echo "hello from MACOS"
+=======
+  get-bq-data:
+    runs-on: macos-11
+    name: Get GA4 data from BQ
+    steps:
+      - name: Set env
+        run: echo "hello from MACOS"
+
+>>>>>>> cb4b35dfb1cb86f4baa307f00427388b953fb2a9
