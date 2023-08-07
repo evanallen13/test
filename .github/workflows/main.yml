@@ -51,7 +51,7 @@ jobs:
           pip install -r requirements.txt
   
   run:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: checkout repo content
         uses: actions/checkout@v2 
