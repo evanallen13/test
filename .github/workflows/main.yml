@@ -28,7 +28,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
 
       - name: checkout repo content
@@ -59,10 +59,4 @@ jobs:
       - name: execute py script 
         run: python example.py "Saying Hello from workflow"
 
-  get-bq-data:
-    runs-on: macos-11
-    name: Get GA4 data from BQ
-    steps:
-      - name: Set env
-        run: echo "hello from MACOS"
 
